@@ -8,16 +8,16 @@ import sys
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-username= os.getenv("XIAOBEI_USERNAME")
-pd= os.getenv("XIAOBEI_PASSWORD")
+username= os.getenv("430525200102136197")
+pd= os.getenv("136197")
 password=base64.b64encode(pd.encode())
 password=password.decode()
 SCKEY = os.getenv("XIAOBEI_SCKEY")
 #健康打卡提交的信息
 temperature={
     "temperature": "36.3",
-    "coordinates": "中国-重庆市-重庆市-永川区",
-    "location": "105.933807,29.320102",
+    "coordinates": "中国-湖南省-长沙市-望城区",
+    "location": "112.910696,28.35836",
     "healthState": "1",
     "dangerousRegion": "2",
     "dangerousRegionRemark": "",
