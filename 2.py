@@ -8,8 +8,8 @@ import sys
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-username= os.getenv("430525200102136197")
-pd= os.getenv("136197")
+username= os.getenv("XIAOBEI_USERNAME")
+pd= os.getenv("XIAOBEI_PASSWORD")
 password=base64.b64encode(pd.encode())
 password=password.decode()
 SCKEY = os.getenv("XIAOBEI_SCKEY")
